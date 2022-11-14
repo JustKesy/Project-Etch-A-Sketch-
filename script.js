@@ -8,4 +8,11 @@ for (let i = 0; i < 256; i++) {
   );
   conteiner.appendChild(divs[i]);
 }
-console.log(divs.length);
+divs.forEach((div) =>
+  div.addEventListener("mouseover", (e) =>
+    e.target.setAttribute(
+      "style",
+      "  background-color: blue; border:1px solid black"
+    )
+  )
+);
