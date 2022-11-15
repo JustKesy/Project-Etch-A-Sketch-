@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -9,7 +10,16 @@ body {
   padding: 5px;
   height: 800px;
   width: 800px;
+  margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-size {
+  background-color: greenyellow;
+  border-radius: 15px;
+  border: 8px double black;
+  width: 150px;
+  height: 50px;
 }
